@@ -1,0 +1,46 @@
+body{
+    background:#eff1f4ff;
+}
+#painel-menu-color{
+    background-color:rgba(255, 255, 255,0.5);
+    box-shadow: 0px 1px rgba(164,164,164,0.4);
+
+}
+#navbar-site-title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.8em;
+    padding-left: 1.5%;
+}
+#navbar-search-form{
+  width: 350px; 
+  padding-right: 5%; 
+}
+#navbar-search-field{
+    /** herda pararametro do pai navbar-search-form **/
+    width: 100%;
+    border-radius: 8px;
+    border-color: #bacad6ff;
+    border-width: 1px;
+    box-shadow: 0px 1px rgba(164,164,164,0.2);
+    /** parametos centr em x  0px , vertical y 1px COR **/
+    font-family: 'Nunito', sans-serif;
+    color:rgb(70, 70, 70);
+    font-size: 1em;
+    
+}
+#navbar-search-field::placeholder{
+    font-family: 'Nunito', sans-serif;
+    color:#bacad6ff;
+    font-size: 1.1em; 
+}
+
+#navbar-profile img{
+    border-radius: 50%;
+    width: 8%;
+}
+#navbar-profile span{
+    padding-left: 3%;
+    color: #262d37ff;
+    font-family: 'Nunito', sans-serif;
+}
+

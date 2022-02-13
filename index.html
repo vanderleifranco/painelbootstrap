@@ -4,163 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOOTSTRAP</title>
+    <title>Painel</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/bt.css">
+    <link rel="stylesheet" href="./css/fonte.css">
+    <link rel="stylesheet" href="./css/style.css">
 <body>
     <!--navegação componentes bootstrap--> 
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-light" id="painel-menu-color">
+        <a href="" class="navbar-brand" id="navbar-site-title">Painel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#painel-navbar-collapse" aria-controls="painel-navbar-collapse" aria-expanded="false" aria-label="painel">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="painel-navbar-collapse">
+            <form action="" id="navbar-search-form"  class="form-inline">
+                <!-- ml-auto ajusta para direita-->
+                <input type="text" name="search" id="navbar-search-field" class="form-control form-field" placeholder="Search">
+            </form>
+            <div id="navbar-profile" class="ml-auto">
+                <img src="./img/vand.png" alt="">
+                <span>Vanderlei Franco</span>
+            </div>
+        </div>
+    </nav>
         
-        <!-- barra de navegacao componentes-->
-        <nav class="navbar navbar-expand-lg bg-light">
-            <a href="" class="navbar-brand">SON</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"> 
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--navbar - ref url -> ul--navbar-->
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto"><!--esquerda-->
-                <!-- <ul class="navbar-nav mr-auto"> direita-->
-                    <li class="nav-item">
-                        <a href="" class="nav-link">link1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">link2</a>
-                    </li><li class="nav-item">
-                        <a href="" class="nav-link">link3</a>
-                    </li><li class="nav-item">
-                        <a href="" class="nav-link">link4</a>
-                    </li>
-                    <!-- menu dropdown vinculado ao popper -->
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle "data-toggle="dropdown">
-                            linkdropdown
-                        </a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Action 1</a>
-                            <a href="#" class="dropdown-item">Action 2</a>
-                            <a href="#" class="dropdown-item">Action 3</a>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <div class="row" class="no-gutters">
-                <!-- no-gutters remove o espaçamento entre as colunas-->
-                <!--
-                <div class="col-12 col-md-3" style="height:100px; background:red"></div>
-                <div class="col-12 col-md-9" style="height:100px; background:rgb(60, 255, 0)">
-                </div>
-                -->
-                <div class="col-12 col-md-6" >
-                    <h1 class="mt-4 mb-auto">
-                        Welcome to Lan Page VanderFranco
-                    </h1>
-                </div>
-                <div class="col-12 col-md-6" >
-                    <img src="./img/vand.png" alt="VANDERFRANCO" class="img-fluid">
-                </div>
-            </div>
-        </div>
         
-        <!--
-            <div class="container">
-            <div class="row align-items-start" style="border: 5px dotted blueviolet" >
-                <div class="col-12 col-md-6" style="height:100px; background:red">
-                    coluna um 
-                </div>
-                <div class="col-12 col-md-6" style="height:100px; background:rgb(60, 255, 0)">
-                    coluna dois
-                </div>
-            </div>
-        </div>
-    -->
-    <!-- criando um formulario 
-    <div class="conteinar">
-        <div class="row ">
-            <div class="col-sm-12 align-items-sm-center" >
-                <form action="" >
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input class="form-control" type="text" placeholder="Entre com seu nome:" name="name">
-                        <small class="form-text text-muted">Ajuda - texto formulário</small>
-                    </div>                                   
-                    <div class="form-group">
-                        <label for="email">E-mail:</label>
-                        <input class="form-control" type="email" placeholder="Entre com o email:" name="name">
-                        <small class="form-text text-muted">Ajuda - Email</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select class="form-control" name="subject" >
-                            <option value="" select></option>
-                            <option value="">op1</option>
-                            <option value="">op2</option>
-                            <option value="">op3</option>
-                            <option value="">op4</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensage:</label>
-                        <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Entre com sua mensagem">
-                        </textarea>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    -->
-    <!-- formulario com row col-- 6 6 e 12-->
-    <div class="col-sm-12">
-        <form action="">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" class="form-control" name="name" placeholder="Enter your name:">
-                        <small class="form-text text-muted">Put your full name</small>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" placeholder="Enter email: ">
-                        <small class="form-text text-muted">Put your best email here</small>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12">
-                    <div class="form-group">
-                        <label for="subject">Subject:</label>
-                        <select name="subject" class="form-control">
-                            <option value="" selected></option>
-                            <option value="">Option 1</option>
-                            <option value="">Option 2</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Enter you message"></textarea>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input">
-                        <label for="" class="form-check-label">Send reply to email?</label>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-block btn-lg btn-outline-danger">Send!</button>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-
-
-
-    </main>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.min.js"></script>
