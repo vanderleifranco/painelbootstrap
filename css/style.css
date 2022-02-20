@@ -1,5 +1,10 @@
 body{
     background:#eff1f4ff;
+    overflow-x: hidden;
+    /** esconder o overflow causado por min-width: 100vw no id #page-content-wrapper **/
+}
+#page-content-wrapper{
+    min-width: 100vw; /** view port widht  dividida em 100 colunas 100 é toda largura da tela  **/
 }
 #painel-menu-color{
     background-color:rgba(255, 255, 255,0.5);
