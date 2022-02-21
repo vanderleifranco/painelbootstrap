@@ -1,3 +1,7 @@
+/** font-awesome
+The iconic SVG, font, and CSS toolkit**/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css);
+
 body{
     background:#eff1f4ff;
     overflow-x: hidden;
@@ -5,8 +9,12 @@ body{
 }
 
 #painel-menu-color{
-    background-color:rgba(255, 255, 255,0.5);
-    box-shadow: 0px 1px rgba(164,164,164,0.4);
+    background-color: #fff;
+    box-shadow: 8px 2px 6px rgba(164, 164, 164, 0.3);
+    height: 64px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
 }
 
 #navbar-site-title{
@@ -20,17 +28,18 @@ body{
   padding-right: 5%; 
 }
 
-#navbar-search-field{
-    /** herda pararametro do pai navbar-search-form **/
-    width: 100%;
+
+
+.painel-form-field{
     border-radius: 8px;
+    border-color: rgb(133, 123, 123);
+    border-width: 0.03em;
     border-color: #bacad6ff;
-    border-width: 1px;
-    box-shadow: 0px 1px rgba(164,164,164,0.2);
-    /** parametos centr em x  0px , vertical y 1px COR **/
+    box-shadow: 0px 1px 1px rgba(164,164,164,0.1);
+    color: rgb(100, 97, 97);
     font-family: 'Nunito', sans-serif;
-    color:rgb(70, 70, 70);
-    font-size: 1em; 
+    font-size: 1.05em;
+    padding-left: 10px;
 }
 
 #navbar-search-field::placeholder{
@@ -63,7 +72,7 @@ body{
 
 /** estilisar o cabecalho PAINEL VANDER **/
 #sidebar-wrapper .sidebar-heading{
-    background-color: #303A47;
+    background-color: #262d37ff;
     color: #fff;
     height: 64px;
     font-family: 'Nunito', sans-serif;
@@ -84,6 +93,13 @@ body{
     font-family: 'Nunito', sans-serif;
     padding: 10%;
     padding-left: 15%;
+}
+
+#sidebar-wrapper .list-group-item i{
+    
+    padding-right: 6%;
+    font-size: 1.3em;
+    
 }
 
 #sidebar-wrapper .list-group-item:hover{
@@ -118,10 +134,17 @@ body{
     }
 
 }
+#menu-toggle{
+    background-color: #262d37ff;
+    width: 82px;
+    height: 64px;
+    color: #fff;
+    padding-top: 14px;
+}
+
 
 /**--------------------------------------------------------------------------------------------------------**/
 #menu-toggle img{
-    
     width: 25px;
 }
 
@@ -132,3 +155,5 @@ body{
     -o-transition: margin .25s ease-out;
     transition: margin .25s ease-out;    
 }
+
+

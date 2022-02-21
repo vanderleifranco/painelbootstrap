@@ -19,12 +19,12 @@
                </span>
            </div>
            <div class="list-group list-group-flush border-right">
-                <a href="" class="list-group-item list-group-item-action">Inicio</a>
-                <a href="" class="list-group-item list-group-item-action">Funcionários</a>
-                <a href="" class="list-group-item list-group-item-action">Produtos</a>
-                <a href="" class="list-group-item list-group-item-action">Categorias</a>
-                <a href="" class="list-group-item list-group-item-action">Fornecedores</a>
-                <a href="" class="list-group-item list-group-item-action">Relatórios</a>
+                <a href="" class="list-group-item list-group-item-action"><i class="fas fa-home"></i>Inicio</a>
+                <a href="" class="list-group-item list-group-item-action"><i class="fas fa-user-tie"></i></i>Funcionários</a>
+                <a href="" class="list-group-item list-group-item-action"><i class="fab fa-product-hunt"></i>Produtos</a>
+                <a href="" class="list-group-item list-group-item-action"><i class="fas fa-jedi"></i>Categorias</a>
+                <a href="" class="list-group-item list-group-item-action"><i class="fas fa-pen-fancy"></i>Fornecedores</a>
+                <a href="" class="list-group-item list-group-item-action"><i class="fab fa-wpforms"></i>Relatórios</a>
            </div>
        </div>
 
@@ -40,7 +40,7 @@
                 <div class="collapse navbar-collapse" id="painel-navbar-collapse">
                     <form action="" id="navbar-search-form"  class="form-inline">
                         <!-- ml-auto ajusta para direita-->
-                        <input type="text" name="search" id="navbar-search-field" class="form-control form-field" placeholder="Search">
+                        <input type="text" name="search" id="navbar-search-field" class="painel-form-field form-control form-field" placeholder="Search">
                     </form>
                     <div id="navbar-profile" class="ml-auto">
                         <img src="./img/vand.png" alt="">
@@ -48,14 +48,56 @@
                     </div>
                 </div>
             </nav>
+            <div id="content" class="container">
+                <!-- container/bootstrap  -->
+                <h3 id="main-page-form-title">
+                    Novo Artigo
+                </h3>
+                <div class="painel-form">
+                    <form action="">
+                        <div class="form-group">
+                            <label>Autor</label>
+                            <input class=" form-field  painel-form-field form-control" id="user-field" placeholder="User">
+                            <hr>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label>Título</label>
+                            <input class=" form-field  painel-form-field form-control" id="user-field" placeholder="User">
+                            <hr>
+
+                        </div>
+                        <div class="form-group">
+                            <label>Conteúdo</label>
+                            <textarea id="body-field" placeholder=" Texto submissão" class="form-field painel-form-field form-control"></textarea>
+                            <hr>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label>Autor</label>
+                            <input type="date" id="date-field" class=" form-field  painel-form-field form-control" id="user-field">
+                            <hr>
+
+                        </div>
+                        <div class="confirm-btns">
+                            <button class="btn btn-primary">
+                                Criar e adicionar outro
+                            </button>
+                            <button class="btn btn-primary">
+                                Publicar
+                            </button>    
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
        </div>
        
    </div>
    
-   
-    
-    
-        
+   <!-- Scripts JS -->     
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.min.js"></script>
