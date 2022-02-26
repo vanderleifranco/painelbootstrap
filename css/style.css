@@ -39,7 +39,7 @@ body{
     color: rgb(100, 97, 97);
     font-family: 'Nunito', sans-serif;
     font-size: 1.05em;
-    padding-left: 10px;
+    
 }
 
 #navbar-search-field::placeholder{
@@ -78,12 +78,14 @@ body{
     font-family: 'Nunito', sans-serif;
     font-size: 1.1 em;
     padding: 0.875rem 1.25rem;
+    border:none;
 
 }
 
 /** estilisar os itens do menu  **/
 #sidebar-wrapper .list-group{
     width: 13rem;
+    
 }
 
 #sidebar-wrapper .list-group-item{
@@ -93,6 +95,7 @@ body{
     font-family: 'Nunito', sans-serif;
     padding: 10%;
     padding-left: 15%;
+    border:none;
 }
 
 #sidebar-wrapper .list-group-item i{
@@ -156,4 +159,66 @@ body{
     transition: margin .25s ease-out;    
 }
 
+.painel-form{
+    padding:2%;
+    border-radius: 15px;
+    box-shadow: 0px 1px 4px rgba(164,164,164,0.1);
+}
 
+.confirm-btns{
+    background-color:#ebeef7;
+}
+
+#main-page-form-title{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    
+    margin-top: 5px;
+    margin-left: 25px;
+
+}
+.form-group label{
+    font-size: 1.3em;
+    font-family: 'Nunito', sans-serif;
+    color:rgb(136, 137, 139);
+}
+.confirm-btns{
+    font-family: 'Nunito', sans-serif;
+    font-weight:bold;
+    
+}
+
+/******   table ***/
+.table{
+    border: 0;
+    
+    background-color:#3e4856ff;
+    
+}
+.table-title{
+    padding:2%;
+    font-size: 1em;
+    font-family: 'Nunito', sans-serif;
+    color: #262d37ff;
+    
+}
+.table-title h3{
+    font-size: 2em;
+}
+.table-content{
+    padding-left:2%;
+    padding-right: 2%;
+
+}
+
+.painel-grafic-vendas{
+    padding:2%;
+    font-family: 'Nunito', sans-serif;
+    
+}
+.painel-grafic-vendas h3{
+    font-size: 2em;
+}
+.card{
+    border-radius: 8px;
+}

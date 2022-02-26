@@ -31,6 +31,7 @@
        <!-- Content-->
        <div id="page-content-wrapper">
             <!--navegação componentes bootstrap--> 
+
             <nav class="navbar navbar-expand-lg navbar-light" id="painel-menu-color">
                 <span class="mr-auto" id="menu-toggle"><img src="./img/logo.png" id="logo" class="mx-auto d-block" alt="LOGO"></span>
                 <a href="" class="navbar-brand" id="navbar-site-title">Painel</a>
@@ -50,38 +51,80 @@
             </nav>
             <div id="content" class="container">
                 <!-- container/bootstrap  -->
+                <!--tabela-->
+                <div class="table-title">
+                    <h3 >
+                        Usuários
+                    </h3>
+                    <input type="text" name="search" id="navbar-search-field" class="painel-form-field form-control form-field" placeholder="Search">    
+                </div>
+                
+                <div class="table-content">
+                    <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <!--formulario -->
                 <h3 id="main-page-form-title">
                     Novo Artigo
                 </h3>
                 <div class="painel-form">
-                    <form action="">
-                        <div class="form-group">
-                            <label>Autor</label>
-                            <input class=" form-field  painel-form-field form-control" id="user-field" placeholder="User">
-                            <hr>
-
+                    <form action="" class="card painel-form">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>Autor</label>
+                                <input class=" form-field  painel-form-field form-control" id="user-field" placeholder="User">
+                                <hr>
+    
+                            </div>
+    
+                            <div class="form-group">
+                                <label>Título</label>
+                                <input class=" form-field  painel-form-field form-control" id="user-field" placeholder="User">
+                                <hr>
+    
+                            </div>
+                            <div class="form-group">
+                                <label>Conteúdo</label>
+                                <textarea id="body-field" placeholder=" Texto submissão" class="form-field painel-form-field form-control"></textarea>
+                                <hr>
+    
+                            </div>
+    
+                            <div class="form-group">
+                                <label>DATA</label>
+                                <input type="date" id="date-field" class=" form-field  painel-form-field form-control" id="user-field">
+    
+                            </div>
                         </div>
-
-                        <div class="form-group">
-                            <label>Título</label>
-                            <input class=" form-field  painel-form-field form-control" id="user-field" placeholder="User">
-                            <hr>
-
-                        </div>
-                        <div class="form-group">
-                            <label>Conteúdo</label>
-                            <textarea id="body-field" placeholder=" Texto submissão" class="form-field painel-form-field form-control"></textarea>
-                            <hr>
-
-                        </div>
-
-                        <div class="form-group">
-                            <label>Autor</label>
-                            <input type="date" id="date-field" class=" form-field  painel-form-field form-control" id="user-field">
-                            <hr>
-
-                        </div>
-                        <div class="confirm-btns">
+                        <div class="confirm-btns card-footer">
                             <button class="btn btn-primary">
                                 Criar e adicionar outro
                             </button>
@@ -90,7 +133,19 @@
                             </button>    
                         </div>
                     </form>
-                    
+                </div>
+                <!-- grafico de vendas char.js-->
+                <div class="painel-grafic-vendas">
+                    <h3 >
+                        Vendas
+                    </h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <canvas id="relatorio">
+
+                            </canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
        </div>
@@ -102,6 +157,10 @@
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/scripts.js"></script>
+    <!-- renomear o diretorio dist para chart-->
+    <script src="./js/chart/chart.min.js"></script>
+    <script src="./js/graf.js">
+    </script>
    
 
 </body>
